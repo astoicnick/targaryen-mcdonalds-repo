@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Cashier.cs" />
+    <Compile Include="Classes\Cook.cs" />
+    <Compile Include="Classes\Menu.cs" />
+    <Compile Include="Classes\MenuDisplayCase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,0 +1,24 @@
+﻿@page "/makefood/{menuItemKeyStr}"
+@inject Menu menu 
+
+<h1 style="text-align: center;">Cooked @NameOfMenuItem!</h1>
+
+@code {
+    [Parameter]
+    public string menuItemKeyStr { get; set; }
+
+    public int menuItemKey { 
+        get
+        {
+            return Convert.ToInt32(menuItemKeyStr);
+        }
+    }
+
+    public string NameOfMenuItem { get; set; }
+
+    protected override Task OnInitializedAsync()
+    {
+        NameOfMenuItem = menu.menuItems[menuItemKey];
+        return base.OnInitializedAsync();
+    }
+}

@@ -1,0 +1,19 @@
+﻿@page "/"
+@inject Menu menu 
+
+
+<h1>Hello, welcome to McDonald's!</h1>
+
+<ul>
+
+    @foreach (KeyValuePair<int, string> menuItem in menu.menuItems)
+    {
+    <li id="@menuItem.Key">
+        <h1>
+            @menuItem.Value
+        </h1>
+        <a href="makefood/@menuItem.Key">Make @menuItem.Value</a>
+    </li>
+    }
+
+</ul>
