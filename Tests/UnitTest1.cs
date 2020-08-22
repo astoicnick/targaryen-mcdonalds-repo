@@ -12,6 +12,9 @@ namespace Tests
         public void TestMethod1()
         {
             Person person = new Person();
+            person.Age = 19;
+            Console.WriteLine("Person is 21: " + person.IsAtLeast21);
         }
+
     }
 }
