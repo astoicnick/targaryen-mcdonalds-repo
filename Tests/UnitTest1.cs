@@ -1,6 +1,7 @@
 ﻿using System;
 using ConsoleApp.Classes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Tests.Classes;
 
 namespace Tests
 {
@@ -8,10 +9,9 @@ namespace Tests
     public class UnitTest1
     {
         [TestMethod]
-        public void Taking_Order()
+        public void TestMethod1()
         {
-            Cashier cashier = new Cashier();
-            cashier.GetOrder();
+            Person person = new Person();
         }
     }
 }
